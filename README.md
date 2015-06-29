@@ -4,7 +4,7 @@ A web application demonstrating the use of NodeJS and AngularJS frameworks.Anima
 Technology stack:
 
 * Node JS
-* MMongo DB
+* Mongo DB
 * REST Services
 * Angular JS
 * CSS

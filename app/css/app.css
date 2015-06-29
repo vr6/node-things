@@ -1,0 +1,157 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+  font-family: Calibri,sans-serif;
+/*  
+  font-family: 'Segoe UI Light','Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+*/  
+}
+.datarow {
+	color: black;
+}
+.datarow.active {
+	color: yellow;
+}
+tr {
+border-bottom: 1px solid #ccc;
+}
+td, th {
+ 	padding-top:3px;
+ 	padding-bottom:3px;
+ 	padding-left:10px;
+ 	padding-right:10px;
+}
+th {
+	font-size:14px;
+	font-weight:100;
+	background-color:#f8f8f8;
+} 
+td {
+	background-color:white;
+}
+
+.datalist {
+	margin:20px;
+	border-top:3px solid #f84;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.devicetype-images {
+  background-color: white;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.devicetypes {
+  list-style: none;
+}
+
+.thumb {
+  float: left;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;
+}
+.thumb2 {
+  float: center;
+  height: 32px;
+  width: 32px;
+}
+.thumb3 {
+  float: center;
+  height: 200px;
+  width: 200px;
+}
+.thumb4 {
+  float: center;
+  height: 200px;
+  width: 200px;
+}
+
+.devicetypes li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+
+/** Detail View **/
+img.devicetype {
+  float: left;
+  margin-right: 3em;
+  margin-bottom: 2em;
+  background-color: white;
+  padding: 2em;
+  height: 400px;
+  width: 400px;
+  display: none;
+}
+
+img.devicetype:first-child {
+  display: block;
+}
+
+
+ul.devicetype-thumbs {
+  margin: 0;
+  list-style: none;
+}
+
+ul.devicetype-thumbs li {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+}
+
+ul.devicetype-thumbs img {
+  height: 100px;
+  width: 100px;
+  padding: 1em;
+}
+
+ul.devicetype-thumbs img:hover {
+  cursor: pointer;
+}
+
+
+ul.specs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.specs > li{
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+ul.specs > li > span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.monospace {
+	font-family: 'Lucida Console', 'Calibri';
+	font-size: 10pt;
+}
+ul.specs dt {
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+h2 {
+	font-family: 'Segoe UI','Segoe UI Light','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+	color: #00368a;
+	font-weight:normal;
+}
+selected-row {
+	background-color:#ffe;
+}

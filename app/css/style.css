@@ -1,0 +1,39 @@
+/* CSS goes here */
+
+.popupmenu {
+  max-height: 300px;
+  position: relative;
+  text-align:center;
+  font-weight:bold;
+  font-size:20px;
+  cursor:pointer;
+  margin:-3px;
+  }
+ tr {
+ 	border-bottom: 1px solid #ccc;
+ }
+.popupmenu-wrapper {
+    margin: 0;
+	width: 150px;
+    background: #fff;
+    border: 1px solid #aaa;
+    box-shadow: 0 4px 5px rgba(0,0,0,.15);
+    z-index: 1010;
+    border-radius: 4px;
+    margin-top: 1px;
+    position: absolute;
+    cursor:pointer;
+    text-align:left;
+  }  
+
+.menuitem {
+	font-family:calibri;
+	font-weight:normal;
+	font-size:12pt;
+    padding-left:10px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.menuitem:hover { 
+    background-color: #eef;
+}  

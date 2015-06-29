@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app="m2mcore">
+<head>
+  <meta charset="utf-8">
+  <title>Node and Angular</title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/form.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-animate.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="lib/angular-resource.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+
+  <script src="device/device.js"></script>
+  <script src="devsvc/devsvc.js"></script>
+  <script src="message/message.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <table border="0" width="100%">
+  	<tr><td valign="top"><h2 style="text-align:center;font-size:12pt;font-face:'Segoe UI Light';margin-top:-6px;margin-bottom:6px;height:20px;">The Things</h2><br/>
+  	<div style="background-color:#f8f8f8; padding:4px;border:1px solid #ccc;border-top:3px solid #f84;">
+      Search: <input ng-model="query" style="width:120px"></div>
+
+      <br/>
+      <b>Alerts</b> <hr style="height:1px;border:none;margin:0;background-color:#aaa;" />
+      <a href="#/messages">Service Alerts</a><br/>
+
+      <br/>
+      <b>Services</b> <hr style="height:1px;border:none;margin:0;background-color:#aaa;" />
+			<a href="#/devsvcs">All Services</a><br/>
+
+      <br/>
+      <b>Devices</b> <hr style="height:1px;border:none;margin:0;background-color:#aaa;" />
+      <a href="#/devices">Phones & Tablet PCs</a><br/>
+      <a href="#">Server Nodes</a><br/>
+      <a href="#">Docker Containers</a><br/>
+      <a href="#">Automobiles</a><br/>
+      <a href="#">Printers & Copiers</a><br/>
+
+      <br/>
+      <b>Visuals</b> <hr style="height:1px;border:none;margin:0;background-color:#aaa;" />
+      <a href="#">Deployment View</a><br/>
+      <a href="#">Service Dependency</a><br/>
+      <a href="#">Workflows</a><br/>
+
+    </td><td width="100%" valign="top">
+      <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
+    </td></tr></table>
+</div>
+
+</body>
+</html>

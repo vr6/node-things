@@ -1,0 +1,13 @@
+<h2 style="font-size:20pt;margin-top:-10px;margin-bottom:0px;margin-left:20px;">Alerts</h2>
+    	<table class="datalist">
+        <tr><th width="*"><input type="checkbox" /></th><th ng-include="'common/popupmenu.html'"></th>
+	<th>Timestamp</th><th>Device</th><th>Alert type</th><th>Alert title</th></tr>
+	<tr ng-repeat="message in messages | filter:query" class="devicetype-listing">
+          <td><input type="checkbox" /></td>
+		<td><img ng-src="message/{{message.type}}.png"/></td>
+		<td>{{message.timestamp}}</a></td>
+		<td>{{message.device}}</a></td>
+		<td>{{message.type}}</td>
+		<td>{{message.title}}</td>
+	</tr>
+</table>

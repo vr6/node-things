@@ -1,0 +1,13 @@
+<div class="popupmenu" ng-click="toggleSelect()">
+&#9776;
+  <div class="popupmenu-wrapper" ng-show="isPopupVisible">
+    <div class="menuitem" ng:click="addnew()">Add New</div>
+    <div class="menuitem">Edit</div>
+    <div class="menuitem">Remove</div>
+    <div ng-show="isOptMenu">
+      <hr style="height:1px;margin:0;background-color:#aaa" size="1" />
+      <div class="menuitem" ng-repeat="optmenu in optmenus" ng:click="optmenu.menuaction()">{{optmenu.name}}</div>
+    </div>
+  </div>
+</div>
+

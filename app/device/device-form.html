@@ -1,0 +1,26 @@
+
+<h2 style="font-size:20pt;margin-top:-10px;margin-bottom:0px;margin-left:20px;">Add New Device</h2>
+<table class="datalist">
+<tr><td style="padding:20px;background-color:#f8f8f8">
+<style>button{background-color:#eee;border:1px solid #ccc}</style>
+<form>
+    <p><label>URL</label> <input type="text" name="device.url" ng:model="device.url" /></p>
+    <p><label>Model</label>
+    <Select name="device.type" ng:model="device.type">
+    	<option ng-repeat="devmodel in devmodels" value="{{ devmodel._id}}">{{ devmodel.name }}</option>
+    </select></p>
+    <p><label>&nbsp;</label>
+        <button ng:click="cancel()">Cancel</button>
+        <button style="background-color:#cfe8ff;" ng:click="save()">Save</button>
+    </p>
+</form>
+</td></tr>
+</table>
+
+<!--
+<hr/>
+Debug View:
+<pre>form={{devicetype}} <br>
+age={{devicetype.age}} <br> carrier={{devicetype.carrier}} <br> _id={{devicetype._id}}  </pre>
+-->
+

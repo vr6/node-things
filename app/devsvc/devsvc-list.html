@@ -1,0 +1,15 @@
+<h2 style="font-size:20pt;margin-top:-10px;margin-bottom:0px;margin-left:20px;">Services</h2>
+    	<table class="datalist">
+        <tr><th width="*"><input type="checkbox" /></th><th ng-include="'common/popupmenu.html'"></th>
+    			<th>Name</th>
+    			<th>Alerts</th>
+    			<th>Devices</th>
+          <th>Service Id</th>
+        <tr ng-repeat="devsvc in devsvcs | filter:query" class="devicetype-listing">
+          <td><input type="checkbox" /></td>
+          <td><a href="#/devsvcs/{{devsvc._id}}"><img class="thumb2" ng-src="{{devsvc.image}}"/></a></td>
+          <td><a href="#/devsvcs/{{devsvc._id}}">{{devsvc.name}}</a></td>
+          <td><a href="#">&nbsp;{{devsvc.alerts}}&nbsp;</a></td>
+          <td><a href="#">&nbsp;{{devsvc.devices}}&nbsp;</a></td>
+          <td>{{devsvc._id}}</td>
+        </tr></table>

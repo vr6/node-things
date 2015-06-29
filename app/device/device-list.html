@@ -1,0 +1,15 @@
+<h2 style="font-size:20pt;margin-top:-10px;margin-bottom:0px;margin-left:20px;">Devices</h2>
+      <table class="datalist">
+        <tr><th width="*"><input type="checkbox" /></th><th ng-include="'common/popupmenu.html'"></th>
+  
+    		<th>Device Model</th><th>User</th><th>URL</th><th>Alerts</th><th>Services</th><th>Device Id</th></tr>
+        <tr ng-repeat="device in devices | filter:query" class="devicetype-listing">
+          <td><input type="checkbox" /></td>
+          <td><a href="#/devices/{{device._id}}"><img class="thumb2" ng-src="{{device.imageUrl}}"/></a></td>
+          <td><a href="#/devices/{{device._id}}">{{device.name}}</a></td>
+          <td>{{device.user}}</td>
+          <td>{{device.phone}}</td>
+          <td><a href="#">&nbsp;{{device.alerts}}&nbsp;</a></td>
+          <td><a href="#">&nbsp;{{device.svcs}}&nbsp;</a></td>
+          <td>{{device._id}}</td>
+         </tr></table>

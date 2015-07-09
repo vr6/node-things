@@ -9,5 +9,6 @@ Technology stack:
 * Angular JS
 * CSS
 
-It looks sometihng like this:
+It looks something like this:
+
 ![](node-things.png)

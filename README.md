@@ -8,3 +8,5 @@ Technology stack:
 * REST Services
 * Angular JS
 * CSS
+
+![](node-things.png)
